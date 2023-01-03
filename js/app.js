@@ -8,6 +8,8 @@ function verificacion(){
         var nota3 = (document.getElementById('nota3').value);
         var nota4 = (document.getElementById('nota4').value);
         var nota5 = (document.getElementById('nota5').value);
+         
+        console.log(nombreAlumno);
 
         if(nombreAlumno == "") {
                 alert('Debes ingresar un nombre');
@@ -61,7 +63,7 @@ function escribir(nombreAlumno,nota1,nota2,nota3,nota4,nota5,prom){
 
         const tableR = document.createElement('tr');
         tableR.innerHTML = '<th>' + nombreAlumno + '</th>' + '<th>' + nota1 + '</th>'+ '<th>' + nota2 + '</th>'+'<th>' + nota3 + '</th>'+'<th>' + nota4 + '</th>'+'<th>' + nota5 + '</th>'+'<th>' + prom.toFixed(1) + '</th>'
-        document.getElementById('tabala').appendChild(tableR);
+        document.getElementById('tabla').appendChild(tableR);
 
         resultados(curso)
 }

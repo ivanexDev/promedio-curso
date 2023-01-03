@@ -15,7 +15,7 @@
         <img class="logo"src="https://www.jovenesprogramadores.cl/wp-content/uploads/2021/03/jovenes_programadores.svg" alt="LogoJP">
         <h1>Notas del Semetre</h1>
     </header>
-    <form class="ingresoDatos">
+    <div class="ingresoDatos">
         <label for="nombre">Nombre del Alumno:</label>
         
         <input class="nombre" type="text" id="nombre">
@@ -26,11 +26,11 @@
         <input class="nota" type="number" min="1.0" max="7.0" step=".1" placeholder="Nota" id="nota4">
         <input class="nota" type="number" min="1.0" max="7.0" step=".1" placeholder="Nota" id="nota5">
 
-        <button class="btn btn-primary" type="submit" id="enviar" onclick="verificacion()">Enviar</button>
-    </form>
+        <button class="btn btn-primary" id="enviar" onclick="verificacion()">Enviar</button>
+    </div>
 <div class="tablaResultados">
     <table class="table table-striped">
-        <tbody id="tabala">
+        <tbody id="tabla">
         <tr>    
             <th>Nombre</th>
             <th>Nota</th>
