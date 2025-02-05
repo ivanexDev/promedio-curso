@@ -1,0 +1,164 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(57, 200, 57);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+    width: 290px;
+    margin: 10px;
+}
+
+h1 {
+    margin-left: 40px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 4px 10px black;
+}
+
+
+
+input {
+    border-radius: 20px;
+    border-style: dotted;
+    text-align: center;
+}
+
+
+table {
+    margin: 20px;
+    border: 2px solid black;
+}
+
+
+.ingresoDatos {
+    flex-wrap: nowrap;
+    margin: 35px;
+}
+
+.nota {
+    width: 60px;
+    height: 20px;
+    margin: 20px 20px;
+}
+
+.table {
+    width: 50vw;
+}
+
+.tablaResultados {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.resultados {
+    display: flex;
+    padding-left: 12.5rem;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+}
+
+.promCurso {
+    font-weight: bold;
+}
+
+#promedioCurso {
+    align-self: center;
+}
+
+.notasAltas {
+    font-weight: bold;
+
+}
+
+#notaMasAlta {
+
+    align-self: center;
+
+}
+
+#notaMasAlta::first-letter {
+    text-transform: uppercase;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.img-sn {
+    margin: 4px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    width: 32px;
+}
+
+footer {
+    margin-top: auto;
+
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(57, 200, 57);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .nombre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .ingresoDatos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tablaResultados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .resultados {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    #tabla {
+        font-size: 13px;
+    }
+}
