@@ -42,3 +42,7 @@ function resultados() {
     document.getElementById("notaMasAlta").appendChild(tablaMejorPromedio);
   });
 }
+
+function hello(){
+  return "hello"
+}
